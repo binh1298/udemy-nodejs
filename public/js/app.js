@@ -13,7 +13,7 @@ const search = document.querySelector("input");
 weatherForm.addEventListener("submit", e => {
   e.preventDefault();
   const location = search.value;
-  fetch("http://localhost:3000/weather?location=" + location).then(
+  fetch("/weather?location=" + location).then(
     response => {
       response.json().then(data => {
         const messenger = document.querySelector("#messenger");
