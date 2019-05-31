@@ -52,9 +52,9 @@ app.get("", (req, res) => {
     name: "Dante"
   });
 });
-app.get("/help", (req, res) => {
-  res.render("help", {
-    title: "Help",
+app.get("/about", (req, res) => {
+  res.render("about", {
+    title: "About",
     name: "Dante"
   });
 });
